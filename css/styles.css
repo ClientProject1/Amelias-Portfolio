@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Prata';
+    src: url(../fonts/Prata-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ----- colors ----- */
+
+:root {
+  --DarkGrey: #3C3C42;
+  --FadedGrey: #CECED0;
+  --LightPink: #FFFCFA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ----- font styles ----- */
+
+body {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: prata, sans-serif;
+}
+
+.container {
+  background-color: var(--LightPink);
+  height: 100vh;
+}
+
+/* ----- navigation ----- */
+header {
+  width: 100%;
+  height: 64px;
+  padding: 0 80px;
+  background-color: var(--DarkGrey);
+}
+
+.nav,
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav-links {
+  align-items: center;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 40px;
+
+  font-weight: bold;
+
+  padding-bottom: 16px;
+}
+
+/* pseudo elements / classes */
+.active {
+  color: #FFD4D0 !important;
+  border-bottom: 7px solid #FFD4D0;
+}
+
+a:hover {
+  color: #FFD4D0 !important;
+}
