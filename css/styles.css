@@ -67,6 +67,8 @@ a {
 
 .active {
   color: var(--White);
+  border-bottom: 5px solid var(--White);
+  padding-bottom: 11px;
 }
 
 /* pseudo-classes */
@@ -74,14 +76,13 @@ a {
   color: var(--DarkPink);
 }
 
+.nav-links a:active {
+  color: var(--White);
+}
+
 @media (max-width: 768px){
   nav {
     justify-content: space-around;
-  }
-
-  .active {
-    border-bottom: 5px solid var(--White);
-    padding-bottom: 11px;
   }
 
   .nav-links {
