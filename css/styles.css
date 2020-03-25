@@ -9,8 +9,10 @@
 
 :root {
   --DarkGrey: #3C3C42;
-  --FadedGrey: #CECED0;
+  --FadedGrey: #C4C4C6;
   --LightPink: #FFFCFA;
+  --White: #FFFFFF;
+  --DarkPink: #FFD4D0;
 }
 
 * {
@@ -33,7 +35,7 @@ h5 {
 }
 
 
-/* navigation  */
+/* ----- navigation ------  */
 nav {
   display: flex;
   justify-content: space-between;
@@ -52,7 +54,7 @@ li,
 a {
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: var(--FadedGrey);
 }
 
 .nav-links {
@@ -63,11 +65,32 @@ a {
   font-weight: bold;
 }
 
+.active {
+  color: var(--White);
+}
+
+/* pseudo-classes */
+.nav-links a:hover {
+  color: var(--DarkPink);
+}
+
 @media (max-width: 768px){
   nav {
     justify-content: space-around;
   }
+
+  .active {
+    border-bottom: 5px solid var(--White);
+    padding-bottom: 11px;
+  }
+
   .nav-links {
     flex-basis: 800px;
+  }
+}
+
+@media (max-width: 375px) {
+  nav {
+    padding: 0 2.5%;
   }
 }
