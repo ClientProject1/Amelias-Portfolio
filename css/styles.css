@@ -22,8 +22,26 @@
 /* ----- font styles ----- */
 
 body {
+  background-color: var(--LightPink);
   font-family: montserrat, sans-serif;
   font-size: 16px;
+  color: var(--DarkGrey);
+}
+
+p {
+  line-height: 30px;
+  margin: 16px 0;
+}
+
+h1 {
+  font-size: 3.750rem;
+  margin: 0;
+}
+
+@media (max-width: 375px){
+  h1 {
+    font-size: 2.500rem;
+  }
 }
 
 h1,
@@ -43,7 +61,7 @@ nav {
   flex-wrap: wrap;
 
   background-color: var(--DarkGrey);
-  padding: 0 5%;
+  padding: 4px 5%;
 }
 
 ul {
@@ -68,7 +86,7 @@ a {
 .active {
   color: var(--White);
   border-bottom: 5px solid var(--White);
-  padding-bottom: 11px;
+  padding-bottom: 15px;
 }
 
 /* pseudo-classes */
@@ -80,6 +98,23 @@ a {
   color: var(--White);
 }
 
+/* main container */
+.container {
+  padding: 0 5%;
+}
+
+
+/* header text */
+.hero-text {
+  text-align: center;
+  margin: auto;
+  margin-top: 64px;
+  max-width: 950px;
+}
+
+
+/* ----- @media queries ----- */
+
 @media (max-width: 768px){
   nav {
     justify-content: space-around;
@@ -88,10 +123,21 @@ a {
   .nav-links {
     flex-basis: 800px;
   }
+
+  .hero-text {
+    margin-top: 32px;
+  }
+  .extra-hero-text {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
   nav {
+    padding: 0 2.5%;
+  }
+
+  .container {
     padding: 0 2.5%;
   }
 }
