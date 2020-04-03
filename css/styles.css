@@ -41,7 +41,7 @@ h1 {
 h6 {
   font-size: 1.5rem;
   font-weight: normal;
-  margin: 8px 0 0 0;
+  margin: 0;
 }
 
 h1,
@@ -118,6 +118,68 @@ a {
 }
 
 /* -------- cards -------- */
+
+/* .card {
+  display: flex;
+  align-items: flex-end;
+  min-height: 392px;
+
+  background: url("../img/Public-Relations.png") center;
+  background-size: cover;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.card-text {
+  flex-grow: 10;
+
+  text-align: center;
+  background-color:  rgba(255, 255, 255, 0.9);
+  border: 1px solid red;e
+}
+
+.card-img {
+  width: 70%;
+} */
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 600px;
+  margin-bottom: 48px;
+
+  height: 400px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.card-image {
+  background-image: url(../img/Public-Relations.png);
+  background-size: cover;
+  background-position: center;
+
+  flex: 1 290px;
+  width: 50%;
+
+}
+
+.card-text {
+  flex: 1 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
 
 
 /* ----- @media queries ----- */
