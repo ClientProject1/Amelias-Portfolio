@@ -38,6 +38,12 @@ h1 {
   margin: 0;
 }
 
+h6 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 8px 0 0 0;
+}
+
 h1,
 h2,
 h3,
@@ -111,6 +117,43 @@ a {
   max-width: 950px;
 }
 
+/* -------- cards -------- */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 392px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.card-info {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 5px 5px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.card-FMP {
+  background: url(../img/Public-Relations.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.p-card {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.btn-card {
+  margin-bottom: 16px;
+}
 
 /* ----- @media queries ----- */
 
