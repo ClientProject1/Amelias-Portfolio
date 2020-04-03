@@ -92,6 +92,11 @@ a {
   color: var(--White);
 }
 
+.active:hover {
+  color: var(--White) !important;
+}
+
+
 /* main container */
 .container {
   padding: 0 5%;
