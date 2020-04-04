@@ -39,6 +39,7 @@ h1 {
 }
 
 h6 {
+  font-family: Prata;
   font-size: 1.5rem;
   font-weight: normal;
   margin: 0;
@@ -117,31 +118,7 @@ a {
   max-width: 950px;
 }
 
-/* -------- cards -------- */
-
-/* .card {
-  display: flex;
-  align-items: flex-end;
-  min-height: 392px;
-
-  background: url("../img/Public-Relations.png") center;
-  background-size: cover;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-
-.card-text {
-  flex-grow: 10;
-
-  text-align: center;
-  background-color:  rgba(255, 255, 255, 0.9);
-  border: 1px solid red;e
-}
-
-.card-img {
-  width: 70%;
-} */
+/* -------- cards for large screens -------- */
 
 .cards {
   display: flex;
@@ -181,10 +158,46 @@ a {
   text-align: center;
 }
 
+/* -------- cards for small screens -------- */
+.cards-sml {
+  display: flex;
+}
 
+.card-sml {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-img-sml {
+  width: 100%;
+}
+
+.card-text-sml {
+  bottom: 0;
+  width: 100%;
+
+  text-align: center;
+  padding: 8px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
+@media (min-width: 768px) {
+  .cards-sml {
+    display: none;
+  }
+}
 
 @media (max-width: 768px){
+
+  .cards {
+    display: none
+  }
+
   nav {
     justify-content: space-around;
   }
