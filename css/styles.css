@@ -120,14 +120,20 @@ a {
 
 /* -------- cards for large screens -------- */
 
-.cards {
+.cards,
+.card,
+.card-text,
+.cards-sml,
+.card-sml {
   display: flex;
+}
+
+.cards {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .card {
-  display: flex;
   flex-wrap: wrap;
   flex: 1 600px;
   margin-bottom: 48px;
@@ -139,18 +145,12 @@ a {
 }
 
 .card-image {
-  background-image: url(../img/Public-Relations.png);
-  background-size: cover;
-  background-position: center;
-
+  background: url(../img/Public-Relations.png) center / cover;
   flex: 1 290px;
-  width: 50%;
-
 }
 
 .card-text {
   flex: 1 290px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -159,12 +159,7 @@ a {
 }
 
 /* -------- cards for small screens -------- */
-.cards-sml {
-  display: flex;
-}
-
 .card-sml {
-  display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
