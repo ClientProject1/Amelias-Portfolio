@@ -177,12 +177,19 @@ a {
   flex: 1 600px;
   margin-bottom: 48px;
 
-  height: 400px;
+  min-height: 400px;
 }
 
 .card-image {
-  background: url(../img/Public-Relations.png) center / cover;
   flex: 1 290px;
+}
+
+.card-image-FMP {
+  background: url(../img/Public-Relations.png) center / cover;
+}
+
+.card-image-PR {
+  background: url(../img/Public-Relations.png) center / cover;
 }
 
 .card-text {
@@ -211,6 +218,10 @@ a {
 .card-text-sml {
   width: 100%;
   width: 100%;
+}
+
+.card-img-sml {
+  max-height: 500px;
 }
 
 .card-text-sml {
