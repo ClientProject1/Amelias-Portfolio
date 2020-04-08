@@ -53,6 +53,21 @@ h5 {
   font-family: prata, sans-serif;
 }
 
+/* button element */
+
+button {
+  height: 42px;
+  font: normal normal bold 0.875em/1.875em montserrat;
+  text-transform: uppercase;
+
+  color: var(--White);
+  background-color: var(--DarkGrey);
+
+  padding: 0 16px;
+  border-radius: 5px;
+}
+
+
 
 /* ----- navigation ------  */
 nav {
@@ -133,11 +148,27 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* cards radius */
+.card,
+.card-img-sml,
+.card-sml {
+  border-radius: 5px;
+}
+
+.card-image {
+  border-radius: 5px 0 0 5px;
+}
+
+.card-text-sml {
+  border-radius: 0 0 5px 5px;
+}
+
 
 
 /* -------- cards for large screens -------- */
 
-.cards {
+.cards,
+.cards-sml {
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -164,8 +195,14 @@ a {
   text-align: center;
 }
 
+.card1,
+.card3 {
+  margin-right: 24px;
+}
+
 /* -------- cards for small screens -------- */
 .card-sml {
+  margin-bottom: 48px;
   flex-direction: column;
   align-items: center;
   position: relative;
