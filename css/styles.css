@@ -164,7 +164,6 @@ a {
 }
 
 
-
 /* -------- cards for large screens -------- */
 
 .cards,
@@ -189,10 +188,7 @@ a {
 .card-text {
   flex: 1 290px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
+  padding: 24px;
 }
 
 .card1,
@@ -201,11 +197,14 @@ a {
 }
 
 /* -------- cards for small screens -------- */
+
 .card-sml {
   margin-bottom: 48px;
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  /* max-height: 400px; */
 }
 
 .card-img-sml,
@@ -224,6 +223,13 @@ a {
 
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
+@media (max-width: 1352px) {
+  .card1,
+  .card3 {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .cards-sml {
     display: none;
