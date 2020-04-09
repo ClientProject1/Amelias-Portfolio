@@ -61,8 +61,10 @@ h5 {
 }
 
 /* button element */
-
-button {
+.button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
   height: 42px;
   font: normal normal bold 0.875em/1.875em montserrat;
   text-transform: uppercase;
@@ -71,7 +73,7 @@ button {
   background-color: var(--VeryDarkPink);
   border-color: var(--VeryDarkPink);
 
-  padding: 0 16px;
+  padding: 16px;
   border-radius: 5px;
 }
 
