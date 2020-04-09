@@ -13,6 +13,7 @@
   --LightPink: #FFFCFA;
   --White: #FFFFFF;
   --DarkPink: #FFD4D0;
+  --VeryDarkPink: #FFACA5;
 }
 
 * {
@@ -61,7 +62,8 @@ button {
   text-transform: uppercase;
 
   color: var(--White);
-  background-color: var(--DarkGrey);
+  background-color: var(--VeryDarkPink);
+  border-color: inherit;
 
   padding: 0 16px;
   border-radius: 5px;
@@ -107,7 +109,7 @@ a {
 
 /* pseudo-classes */
 .nav-links a:hover {
-  color: var(--DarkPink);
+  color: var(--VeryDarkPink);
 }
 
 .nav-links a:active {
@@ -155,63 +157,73 @@ a {
   border-radius: 5px;
 }
 
-.card-image {
-  border-radius: 5px 0 0 5px;
-}
-
-.card-text-sml {
-  border-radius: 0 0 5px 5px;
-}
-
-
-/* -------- cards for large screens -------- */
-
 .cards,
 .cards-sml {
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+
+/* -------- cards for large screens -------- */
 .card {
   flex-wrap: wrap;
-  flex: 1 600px;
-  margin-bottom: 48px;
+  flex: 1 500px;
+  height: 400px;
 
-  min-height: 400px;
+  margin: 24px;
+  padding: 8px;
 }
 
 .card-image {
-  flex: 1 290px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.card-text {
+  flex-direction: column;
+  padding: 24px;
+  width: 50%;
 }
 
 .card-image-FMP {
-  background: url(../img/Public-Relations.png) center / cover;
+  background: url(../img/FMP.png) center / cover;
 }
 
 .card-image-PR {
   background: url(../img/Public-Relations.png) center / cover;
 }
 
-.card-text {
-  flex: 1 290px;
-  flex-direction: column;
-  padding: 24px;
+.card-image-FM {
+  background: url(../img/fashion-media.png) center / cover;
 }
 
-.card1,
-.card3 {
-  margin-right: 24px;
+.card-image-CD {
+  background: url(../img/concept-developments.png) center / cover;
+}
+
+.btn-lrg {
+  margin-top: auto;
+  color: var(--VeryDarkPink);
+  background-color: inherit;
+  border-color: transparent;
+}
+
+.btn-lrg:hover {
+  color: var(--White);
+  border-color: var(--White);
+  background-color: var(--VeryDarkPink);
 }
 
 /* -------- cards for small screens -------- */
+.cards-sml {
+  justify-content: center;
+}
 
 .card-sml {
   margin-bottom: 48px;
   flex-direction: column;
   align-items: center;
   position: relative;
-
-  /* max-height: 400px; */
 }
 
 .card-img-sml,
@@ -220,8 +232,13 @@ a {
   width: 100%;
 }
 
+.card-text-sml {
+  border-radius: 0 0 5px 5px;
+}
+
 .card-img-sml {
   max-height: 500px;
+  max-width: 500px;
 }
 
 .card-text-sml {
@@ -234,13 +251,6 @@ a {
 
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
-@media (max-width: 1352px) {
-  .card1,
-  .card3 {
-    margin-right: 0;
-  }
-}
-
 @media (min-width: 768px) {
   .cards-sml {
     display: none;
