@@ -63,7 +63,7 @@ button {
 
   color: var(--White);
   background-color: var(--VeryDarkPink);
-  border-color: inherit;
+  border-color: var(--VeryDarkPink);
 
   padding: 0 16px;
   border-radius: 5px;
