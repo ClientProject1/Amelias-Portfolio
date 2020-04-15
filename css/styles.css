@@ -101,6 +101,13 @@ a {
   color: var(--FadedGrey);
 }
 
+.sticky {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
@@ -140,7 +147,7 @@ a {
 .hero-text {
   text-align: center;
   margin: auto;
-  margin-top: 64px;
+  margin-top: 88px;
   max-width: 950px;
 }
 
@@ -294,7 +301,7 @@ a {
   }
 
   .hero-text {
-    margin-top: 32px;
+    margin-top: 130px;
   }
   .extra-hero-text {
     display: none;
@@ -310,7 +317,7 @@ a {
 
 @media (max-width: 375px) {
   nav {
-    padding: 0 2.5%;
+    padding: 4px 2.5%;
   }
 
   h1 {
