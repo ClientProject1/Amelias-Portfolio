@@ -33,6 +33,7 @@ footer {
   background: var(--DarkGrey);
   height: 100px;
   width: 100%;
+  margin-top: 84px;
 }
 
 p {
@@ -269,6 +270,12 @@ a {
 .btn-sml {
   display: inline-flex;
 }
+
+.concept-development-image {
+  height: 400px;
+}
+
+/* information within portfolio cards */
 
 .img {
   margin: auto;
