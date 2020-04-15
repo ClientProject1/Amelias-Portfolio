@@ -322,6 +322,12 @@ a {
   }
 }
 
+@media (max-width: 450px) {
+  .img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 375px) {
   nav {
     padding: 4px 2.5%;
@@ -333,9 +339,5 @@ a {
 
   .container {
     padding: 0 2.5%;
-  }
-
-  .img {
-    max-width: 100%;
   }
 }
