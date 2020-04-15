@@ -150,7 +150,8 @@ a {
 .card,
 .card-text,
 .cards-sml,
-.card-sml {
+.card-sml,
+.img {
   display: flex;
 }
 
@@ -262,14 +263,21 @@ a {
   display: inline-flex;
 }
 
+.img {
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  max-width: 450px;
+}
+
+.card-main-text {
+  text-align: center;
+  margin: auto;
+  max-width: 950px;
+}
 
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
-@media (min-width: 768px) {
-  .cards-sml {
-    display: none;
-  }
-}
 
 @media (max-width: 768px){
 
@@ -291,6 +299,13 @@ a {
   .extra-hero-text {
     display: none;
   }
+
+}
+
+@media (min-width: 768px) {
+  .cards-sml {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
@@ -304,5 +319,9 @@ a {
 
   .container {
     padding: 0 2.5%;
+  }
+
+  .img {
+    max-width: 100%;
   }
 }
