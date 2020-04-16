@@ -269,10 +269,11 @@ a {
 
 .btn-sml {
   display: inline-flex;
+  margin-top: 16px;
 }
 
 .concept-development-image {
-  height: 400px;
+  height: 300px;
 }
 
 /* information within portfolio cards */
