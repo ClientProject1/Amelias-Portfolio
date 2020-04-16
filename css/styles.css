@@ -318,6 +318,28 @@ a {
   transition: all 0.1s ease-in
 }
 
+/* about page */
+.about {
+  text-align: center;
+}
+
+.about-text {
+  display: flex;
+  margin: auto;
+  margin-top: 24px;
+  max-width: 1174px;
+}
+
+.amelia-picture {
+  display: flex;
+  margin: auto;
+  margin-top: 84px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: url(../img/amelia-img.png) center / cover;
+}
+
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
 
@@ -338,8 +360,13 @@ a {
   .hero-text {
     margin-top: 130px;
   }
+
   .extra-hero-text {
     display: none;
+  }
+
+  .amelia-picture {
+    margin-top: 135px;
   }
 
 }
