@@ -291,6 +291,33 @@ a {
   max-width: 950px;
 }
 
+/* blog */
+
+.blog-screenshot {
+  margin-top: 48px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blog-text {
+  margin-top: 48px;
+  font-size: 18px;
+  text-decoration: underline;
+  color: var(--DarkGrey);
+  cursor: pointer;
+  text-align: center;
+}
+
+.blog-text:hover {
+  color: var(--VeryDarkPink);
+}
+
+.blog-screenshot:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease-in
+}
+
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
 
