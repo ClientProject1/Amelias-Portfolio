@@ -335,34 +335,47 @@ a {
   transition: all 0.1s ease-in
 }
 
-/* about page */
-.about {
-  text-align: center;
+/* about / contact --- page */
+.about,
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .about-text {
   display: flex;
-  margin: auto;
-  margin-top: 24px;
-  max-width: 1174px;
+  text-align: center;
+
+  max-width: 1100px;
+
+  margin-top: 48px;
 }
 
 .amelia-picture {
   display: flex;
-  margin: auto;
-  margin-top: 84px;
-  width: 200px;
-  height: 200px;
+
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: url(../img/amelia-img.png) center / cover;
+
+  margin-bottom: 48px;
 }
 
-/* contact page*/
-.contact-buttons {
-  margin-top: 32px;
-  display: flex;
-  justify-content: space-around;
+.footer-0-mg {
+  margin-top: 0;
 }
+
+/* contact page */
+
+.contact-buttons {
+  display: flex;
+  margin-top: 24px;
+}
+
 
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
@@ -393,7 +406,8 @@ a {
   }
 
   .amelia-picture {
-    margin-top: 135px;
+    width: 200px;
+    height: 200px;
   }
 
 }
