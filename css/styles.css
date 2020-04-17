@@ -398,6 +398,10 @@ a {
   .cards-sml {
     display: none;
   }
+
+  .back-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
