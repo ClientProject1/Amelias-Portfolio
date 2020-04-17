@@ -340,6 +340,13 @@ a {
   background: url(../img/amelia-img.png) center / cover;
 }
 
+/* contact page*/
+.contact-buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
 
