@@ -367,7 +367,7 @@ a {
 /* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
 
-@media (max-width: 768px){
+@media only screen and (max-width: 768px){
   nav {
     justify-content: space-around;
   }
@@ -398,7 +398,7 @@ a {
 
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .cards-sml {
     display: none;
   }
@@ -408,13 +408,13 @@ a {
   }
 }
 
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .img {
     width: 100%;
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   nav {
     padding: 4px 2.5%;
   }
