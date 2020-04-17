@@ -233,6 +233,22 @@ a {
 }
 
 /* -------- cards for small screens -------- */
+.back-btn {
+  width: 56px;
+  height: 56px;
+  background-image: url(../img/back-arrow.svg);
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--DarkGrey);
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  left: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .cards-sml {
   justify-content: center;
 }
