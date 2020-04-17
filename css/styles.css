@@ -367,17 +367,20 @@ a {
 /* ----- @media queries ----- */
 
 @media (max-width: 768px){
-
-  .cards {
-    display: none
-  }
-
   nav {
     justify-content: space-around;
   }
 
+  .nav-up {
+    top: -50px;
+  }
+
   .nav-links {
     flex-basis: 800px;
+  }
+
+  .cards {
+    display: none
   }
 
   .hero-text {
