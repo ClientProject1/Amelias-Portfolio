@@ -474,4 +474,9 @@ a {
   .container {
     padding: 0 2.5%;
   }
+
+  .about {
+    margin-top: 125px !important;
+  }
+
 }
