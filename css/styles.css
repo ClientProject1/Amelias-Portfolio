@@ -428,6 +428,10 @@ a {
     margin-top: 40px;
   }
 
+  .anchor-text {
+    font-size: 20px;
+  }
+
 }
 
 @media only screen and (min-width: 769px) {
