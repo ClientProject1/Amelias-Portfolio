@@ -294,7 +294,6 @@ a {
 }
 
 /* information within portfolio cards */
-
 .img,
 .img-sml,
 .img-lrg  {
@@ -361,7 +360,7 @@ a {
 }
 
 .about {
-  margin-top: 40px;
+  text-align: center;
 }
 
 .about-text {
@@ -369,8 +368,6 @@ a {
   text-align: center;
 
   max-width: 1100px;
-
-  margin-top: 48px;
 }
 
 .amelia-picture {
@@ -396,10 +393,25 @@ a {
 }
 
 
-/* ------------- cards for small screen ------------ */
 /* ----- @media queries ----- */
 
+/* hidding the small cards for all large screens */
+
+@media only screen and (min-width: 769px) {
+  .cards-sml {
+    display: none;
+  }
+
+  .back-btn {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px){
+  .cards {
+    display: none
+  }
+
   nav {
     justify-content: space-around;
   }
@@ -410,10 +422,6 @@ a {
 
   .nav-links {
     flex-basis: 800px;
-  }
-
-  .cards {
-    display: none
   }
 
   .hero-text {
@@ -429,40 +437,16 @@ a {
     height: 200px;
   }
 
-  .about {
-    margin-top: 40px;
-  }
-
   .anchor-text {
     font-size: 20px;
   }
 
-  .img-sml {
-    max-width: 80%;
-  }
-
 }
 
-@media only screen and (min-width: 769px) {
-  .cards-sml {
-    display: none;
+@media only screen and (max-width: 440px) {
+  .about {
+    margin-top: 120px;
   }
-
-  .back-btn {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .img {
-    width: 100%;
-  }
-  .img-sml {
-    max-width: 90%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
   nav {
     padding: 4px 2.5%;
   }
@@ -474,9 +458,4 @@ a {
   .container {
     padding: 0 2.5%;
   }
-
-  .about {
-    margin-top: 125px !important;
-  }
-
 }
