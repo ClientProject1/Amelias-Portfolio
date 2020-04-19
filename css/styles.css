@@ -29,13 +29,6 @@ body {
   color: var(--DarkGrey);
 }
 
-footer {
-  background: var(--DarkGrey);
-  height: 100px;
-  width: 100%;
-  margin-top: 84px;
-}
-
 p {
   line-height: 30px;
   margin: 24px 0;
@@ -375,10 +368,6 @@ a {
   margin-bottom: 48px;
 }
 
-.footer-0-mg {
-  margin-top: 0;
-}
-
 /* contact page */
 
 .contact-buttons {
@@ -386,6 +375,32 @@ a {
   margin-top: 24px;
 }
 
+/* footer */
+
+.footer-0-mg {
+  margin-top: 0;
+}
+
+footer {
+  background: var(--DarkGrey);
+  padding: 24px 0;
+  width: 100%;
+  margin-top: 48px;
+  color: white;
+  font-weight: montserrat;
+  font-size: 12px;
+
+  text-align: center;
+}
+
+.footer-links {
+  width: 44px;
+}
+
+.j-dizzle {
+  padding-top: 16px;;
+  margin: 0;
+}
 
 /* ----- @media queries ----- */
 
