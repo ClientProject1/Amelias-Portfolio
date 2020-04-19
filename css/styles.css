@@ -360,6 +360,10 @@ a {
   align-items: center;
 }
 
+.about {
+  margin-top: 40px;
+}
+
 .about-text {
   display: flex;
   text-align: center;
