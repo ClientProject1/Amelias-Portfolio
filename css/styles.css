@@ -296,7 +296,8 @@ a {
 /* information within portfolio cards */
 
 .img,
-.img-sml {
+.img-sml,
+.img-lrg  {
   margin: auto;
   margin-top: 32px;
   margin-bottom: 32px;
