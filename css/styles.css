@@ -250,6 +250,10 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.back-btn:focus {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
 .cards-sml {
   justify-content: center;
 }
@@ -324,13 +328,15 @@ a {
 .anchor-text {
   margin-top: 48px;
   font-size: 16px;
+  font-weight: bold;
   text-decoration: underline;
   color: var(--DarkGrey);
   cursor: pointer;
   text-align: center;
 }
 
-.anchor-text:hover {
+.anchor-text:hover,
+.anchor-text:focus  {
   color: var(--VeryDarkPink);
 }
 
@@ -427,10 +433,6 @@ a {
   .amelia-picture {
     width: 200px;
     height: 200px;
-  }
-
-  .anchor-text {
-    font-size: 20px;
   }
 
 }
