@@ -134,7 +134,7 @@ a {
 /* main container */
 .container {
   padding: 0 5%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 84px);
 }
 
 
@@ -296,6 +296,7 @@ a {
 }
 
 .img-lrg {
+  margin-bottom: 16px;
   width: 100%;
 }
 
