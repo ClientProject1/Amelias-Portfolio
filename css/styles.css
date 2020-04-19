@@ -294,24 +294,16 @@ a {
 }
 
 /* information within portfolio cards */
-.img,
-.img-sml,
-.img-lrg  {
+.img {
   margin: auto;
   margin-top: 32px;
   margin-bottom: 32px;
-}
 
-.img-sml {
-  max-width: 50%;;
-}
-
-.img {
-  max-width: 700px;
+  width: 50%;
 }
 
 .img-lrg {
-  max-width: 100%;
+  width: 100%;
 }
 
 .card-main-text {
@@ -444,9 +436,6 @@ a {
 }
 
 @media only screen and (max-width: 440px) {
-  .about {
-    margin-top: 120px;
-  }
   nav {
     padding: 4px 2.5%;
   }
@@ -458,4 +447,14 @@ a {
   .container {
     padding: 0 2.5%;
   }
+
+  .about {
+    margin-top: 120px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+
 }
