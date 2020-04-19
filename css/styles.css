@@ -367,6 +367,7 @@ a {
   background: url(../img/amelia-img.png) center / cover;
 
   margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 /* contact page */
@@ -463,13 +464,8 @@ footer {
     padding: 0 2.5%;
   }
 
-  .about {
-    margin-top: 120px;
-  }
-
   .img {
     width: 100%;
   }
-
 
 }
