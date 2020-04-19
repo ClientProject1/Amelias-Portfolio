@@ -304,7 +304,7 @@ a {
 }
 
 .img-sml {
-  max-width: 400px
+  max-width: 50%;;
 }
 
 .img {
@@ -433,6 +433,10 @@ a {
     font-size: 20px;
   }
 
+  .img-sml {
+    max-width: 80%;
+  }
+
 }
 
 @media only screen and (min-width: 769px) {
@@ -448,6 +452,9 @@ a {
 @media only screen and (max-width: 450px) {
   .img {
     width: 100%;
+  }
+  .img-sml {
+    max-width: 90%;
   }
 }
 
