@@ -339,8 +339,7 @@ a {
 /* about / contact --- page */
 
 
-.about,
-.contact {
+.about {
   display: flex;
   flex-direction: column;
 
@@ -365,10 +364,21 @@ a {
 
 /* contact page */
 
-.contact-buttons {
-  display: flex;
-  margin-top: 24px;
+.contact {
+  margin-top: 92px;
 }
+
+form {
+  padding: 56px 84px;
+  border: 2px solid red;
+}
+
+input {
+  display: block;
+}
+
+
+
 
 /* footer */
 
