@@ -3,6 +3,7 @@ var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('nav').outerHeight();
+// var addedClass = document.querySelector('.nav-up').style.marginTop = "-50px";
 
 $(window).scroll(function(event){
     didScroll = true;
