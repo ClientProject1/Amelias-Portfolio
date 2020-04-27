@@ -423,7 +423,7 @@ textarea {
   padding: 9px 20px;
 }
 
-button[type="button"] {
+button[type="submit"] {
   box-sizing: border-box;
   border-radius: 3px;
   border: none;
