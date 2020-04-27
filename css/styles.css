@@ -363,22 +363,114 @@ a {
 }
 
 /* contact page */
+.contact-buttons {
+  border-top: 1px solid white;
+  margin: 24px;
+}
+
+.contact-buttons a{
+  text-decoration: underline;
+  color: black;
+  display: block;
+  margin: 24px 0;
+}
+
+.contact-buttons p {
+  margin: 24px 0;
+  font-weight: bold;
+}
 
 .contact {
-  margin-top: 92px;
+  text-align: center;
+  margin-top: 48px;
 }
 
-form {
-  padding: 56px 84px;
-  border: 2px solid red;
+.form {
+  margin: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 56px 2%;
+  background-color: #FFD4D0;
+  max-width: 1000px;
 }
 
-input {
+label {
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"] {
+  box-sizing: border-box;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 9px 20px;
+  border-radius: 3px;
+  font-size: 1rem;
+  max-height: 3em;
+}
+
+textarea {
+  border: none;
+  border-radius: 3px;
   display: block;
+  width: 100%;
+  padding: 9px 20px;
 }
 
+button[type="button"] {
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  background: var(--DarkGrey);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: montserrat;
+  text-transform: uppercase;
+  padding: 9px 20px;
+  cursor: pointer;
+}
 
+/* flex */
+.name {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.fname,
+.sname {
+  display: flex;
+  flex-direction: column;
+  flex: 1 230px;
+  margin: 24px;
+}
+
+.email-container,
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 24px 24px;
+}
+
+.contact-btn {
+  width: 100%;
+}
+
+.btn-container-form {
+  margin: 24px;
+}
+
+@media (max-width: 643px){
+  .fname {
+    margin-bottom: 0;
+  }
+}
 
 /* footer */
 

@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <nav class="nav sticky nav-up">
+    <nav class="nav  nav-up">
       <!-- logo -->
       <a style="height: 51px" href="index.html">
         <img src="img/logo.svg" alt="">
@@ -26,38 +26,65 @@
       </ul>
     </nav>
 
-    <div class="container contact">
-
-      <form action="" class="contact-form" method="post" name="contact">
-
-          <label for="fname">First Name</label>
-          <input type="text" name="fname" id="fname">
-
-          <label for="sname">Second Name</label>
-          <input type="text" name="sname" id="sname">
-
-      </form>
-
+    <div class="contact">
+      <h1>Contact</h1>
+      <p> Please feel free to contact me from below </p>
     </div>
 
-    <!-- <div class="container contact">
-      <h1>Contact</h1>
-      <br>
-      <p class="header-text about-text">
-        Please feel free to contact me via the buttons below
-      </p>
-      <div class="contact-buttons">
-        <a target="_blank" href="download/CV.pdf" class="button btn-lrg ">Download CV</a>
-        <a href="mailto:amelia.butler98@gmail.com" class="button btn-lrg ">Email Me</a>
-      </div>
-    </div> -->
+    <div class="container">
+      <form class="form">
+        <div class="name">
+          <!-- first name -->
+          <div class="fname">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name">
+          </div>
 
-    <!-- <footer>
+          <!-- second name -->
+          <div class="sname">
+            <label for="second-name">Second Name</label>
+            <input type="text" name="second-name">
+          </div>
+        </div>
+
+        <!-- email -->
+        <div class="email-container">
+          <label for="email">Email</label>
+          <input type="email" name="email">
+        </div>
+
+        <!-- message -->
+        <div class="message-container">
+          <label for="message">Message</label>
+          <textarea name="message" rows="10"></textarea>
+        </div>
+
+        <!-- submit button -->
+        <div class="btn-container-form">
+          <button type="button" class="contact-btn">Send Message</button>
+        </div>
+
+        <!-- contact information -->
+         <div class="contact-buttons">
+           <p>Contact Information</p>
+           <a target="_blank" href="download/CV.pdf">Download CV</a>
+           <a href="mailto:amelia.butler98@gmail.com">amelia.butler98@gmail.com</a>
+         </div>
+
+       </div>
+
+
+      </form>
+    </div>
+
+
+
+    <footer>
       <div class="">
         <a target="_blank" href="https://linktr.ee/ameliabutler98"><img class="footer-links" src="img/logos/blog-link.svg"></a>
       </div>
       <p class="j-dizzle"> ©2020 website by James Phelps</p>
-    </footer> -->
+    </footer>
   </body>
   <script src="js/script.js"></script>
 </html>
