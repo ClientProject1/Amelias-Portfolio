@@ -22,7 +22,7 @@
         <li><a href="index.html">Portfolio</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.php" class="active">Contact</a></li>
       </ul>
     </nav>
 
@@ -32,7 +32,7 @@
     </div>
 
     <div class="container">
-      <form class="form" method="post">
+      <form class="form" method="post" action="contactform.php">
         <div class="name">
           <!-- first name -->
           <div class="fname">
@@ -61,7 +61,7 @@
 
         <!-- submit button -->
         <div class="btn-container-form">
-          <button type="submit" class="contact-btn">Send Message</button>
+          <button type="submit" name="submit" class="contact-btn">Send Message</button>
         </div>
 
         <!-- contact information -->
